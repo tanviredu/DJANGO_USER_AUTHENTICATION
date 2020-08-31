@@ -1,0 +1,10 @@
+{% extends 'Login_App/base.html' %}
+{% block content %}
+<div class="jumbotron">
+    <p>Hi {{user_basic_info.username}}</p>
+    <p>Your email {{user_basic_info.email}}</p>
+    <p>Your facebook id :{{user_more_info.facebook}}</p>
+    <img src="/media/{{user_more_info.profile_pic}}" width="200px">
+
+</div>
+{% endblock %}
